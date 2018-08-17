@@ -1,0 +1,13 @@
+{
+    "cogs.alias" : true,
+    "cogs.audio" : false,
+    "cogs.customcom" : true,
+    "cogs.downloader" : true,
+    "cogs.economy" : true,
+    "cogs.general" : true,
+    "cogs.image" : false,
+    "cogs.mod" : true,
+    "cogs.streamrole" : true,
+    "cogs.streams" : true,
+    "cogs.trivia" : true
+}

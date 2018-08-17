@@ -1,0 +1,611 @@
+[18/06/2018 12:59] ERROR red load_cogs 573: You need the imgurpython module to use this.
+pip3 install imgurpython
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/home/pi/red-discordbot/cogs/image.py", line 165, in setup
+    raise RuntimeError("You need the imgurpython module to use this.\n"
+RuntimeError: You need the imgurpython module to use this.
+pip3 install imgurpython
+[18/06/2018 12:59] ERROR red load_cogs 573: You need to run `pip3 install youtube_dl`
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/home/pi/red-discordbot/cogs/audio.py", line 2528, in setup
+    raise RuntimeError("You need to run `pip3 install youtube_dl`")
+RuntimeError: You need to run `pip3 install youtube_dl`
+[19/06/2018 11:00] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/asyncio/selector_events.py", line 724, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 641, in read
+    result = yield from super().read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/local/lib/python3.6/asyncio/base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 603, in main
+    yield from bot.connect()
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[25/06/2018 22:02] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/asyncio/selector_events.py", line 724, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 641, in read
+    result = yield from super().read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/local/lib/python3.6/asyncio/base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 603, in main
+    yield from bot.connect()
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[26/06/2018 12:34] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 109, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 12:41] ERROR red load_cogs 573: ('inconsistent use of tabs and spaces in indentation', ('/home/pi/red-discordbot/cogs/streamrole.py', 126, 39, '\t\tprint(strName + " removed from DB ")\n'))
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 126
+    print(strName + " removed from DB ")
+                                       ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('inconsistent use of tabs and spaces in indentation', ('/home/pi/red-discordbot/cogs/streamrole.py', 126, 39, '\t\tprint(strName + " removed from DB ")\n'))
+[26/06/2018 12:43] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 122, in _remove
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 12:44] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 123, in _remove
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 12:47] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:02] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    print(stream + " spacer")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:02] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 113, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:02] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    print(stream + " spacer")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:02] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 113, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:09] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 123, in _remove
+    """Toggles StreamRole on/off."""
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:09] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 126, in _remove
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:27] ERROR red load_cogs 573: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 149, 12, '        conn.commit()\n'))
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 149
+    conn.commit()
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 149, 12, '        conn.commit()\n'))
+[26/06/2018 13:28] ERROR owner load 74: No module named 'numpy'
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 947, in _load_cog
+    importlib.reload(mod_obj)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 166, in reload
+    _bootstrap._exec(spec, module)
+  File "<frozen importlib._bootstrap>", line 608, in _exec
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[26/06/2018 13:28] ERROR owner load 74: No module named 'numpy'
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[26/06/2018 13:30] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 143, in _list
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[26/06/2018 13:35] ERROR red load_cogs 573: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 148, 11, '        for i in data3:\n'))
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 148
+    for i in data3:
+      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 148, 11, '        for i in data3:\n'))
+[26/06/2018 13:37] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 148, in _list
+    await self.bot.reply(cf.info(data3[i]))
+TypeError: list indices must be integers or slices, not tuple
+[26/06/2018 13:39] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 148, in _list
+    await self.bot.reply(cf.info(data3[i][0] + " " + data3[i][1]))
+TypeError: list indices must be integers or slices, not tuple
+[26/06/2018 13:42] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 147, in _list
+    for i in ((range(len(data3)))/2):
+TypeError: unsupported operand type(s) for /: 'range' and 'int'
+[26/06/2018 13:43] ERROR red load_cogs 573: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 148, 12, '        conn.commit()\n'))
+Traceback (most recent call last):
+  File "/home/pi/red-discordbot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 148
+    conn.commit()
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/pi/red-discordbot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/pi/red-discordbot/cogs/streamrole.py', 148, 12, '        conn.commit()\n'))
+[27/06/2018 12:05] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 111, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:10] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 112, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:12] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 113, in _add
+    stream = trunc_at(stream, " ")
+NameError: name 'trunc_at' is not defined
+[27/06/2018 12:14] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 112, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:15] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 112, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:16] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 113, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:17] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 114, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:26] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 114, in _add
+    conn.execute(sql, [(disName), (strName)])
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:26] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:32] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 12:43] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 109, in _add
+    print("The stream variable is: " + stream)
+TypeError: must be str, not list
+[27/06/2018 12:44] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 110, in _add
+    disName, strName = stream.split(",")
+AttributeError: 'list' object has no attribute 'split'
+[27/06/2018 12:53] ERROR red on_command_error 369: Exception in command 'streamroleset add'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 111, in _add
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[27/06/2018 13:06] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 136, in _remove
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[28/06/2018 01:04] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 140, in _remove
+    conn.execute(sql, [(strName)])
+NameError: name 'strName' is not defined
+[28/06/2018 01:05] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 140, in _remove
+    conn.execute(sql, [(strName)])
+NameError: name 'strName' is not defined
+[28/06/2018 01:06] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 137, in _remove
+    disName = disName.replace('-', '').replace('_','')
+UnboundLocalError: local variable 'disName' referenced before assignment
+[04/07/2018 13:07] ERROR red on_command_error 369: Exception in command 'streamroleset remove'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 136, in _remove
+    disName, strName = stream.split(",")
+ValueError: not enough values to unpack (expected 2, got 1)
+[17/07/2018 19:16] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 430, in poll_event
+    msg = yield from self.recv()
+  File "/usr/local/lib/python3.6/site-packages/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: no code, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 435, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/local/lib/python3.6/asyncio/base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 603, in main
+    yield from bot.connect()
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 207, in from_client
+    timeout=60, loop=client.loop)
+  File "/usr/local/lib/python3.6/asyncio/tasks.py", line 352, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 65, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "/usr/local/lib/python3.6/site-packages/websockets/py35/client.py", line 19, in __await__
+    return (yield from self.client)
+  File "/usr/local/lib/python3.6/site-packages/websockets/client.py", line 215, in connect
+    extra_headers=extra_headers)
+  File "/usr/local/lib/python3.6/site-packages/websockets/client.py", line 125, in handshake
+    raise InvalidStatusCode(status_code)
+websockets.exceptions.InvalidStatusCode: Status code not 101: 520
+[18/07/2018 04:23] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/asyncio/selector_events.py", line 724, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 641, in read
+    result = yield from super().read()
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/local/lib/python3.6/asyncio/base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 603, in main
+    yield from bot.connect()
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/usr/local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[19/07/2018 12:15] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 158, in _list
+    await self.bot.reply(cf.info(data3))
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 309, in _augmented_msg
+    msg = yield from coro
+  File "red.py", line 92, in send_message
+    return await super().send_message(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 1152, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400)
+[19/07/2018 12:15] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 158, in _list
+    await self.bot.reply(cf.info(data3))
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 309, in _augmented_msg
+    msg = yield from coro
+  File "red.py", line 92, in send_message
+    return await super().send_message(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 1152, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400)
+[19/07/2018 12:15] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 158, in _list
+    await self.bot.reply(cf.info(data3))
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 309, in _augmented_msg
+    msg = yield from coro
+  File "red.py", line 92, in send_message
+    return await super().send_message(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 1152, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400)
+[19/07/2018 12:20] ERROR red on_command_error 369: Exception in command 'streamroleset list'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/pi/red-discordbot/cogs/streamrole.py", line 158, in _list
+    await self.bot.reply(cf.info(data3))
+  File "/usr/local/lib/python3.6/site-packages/discord/ext/commands/bot.py", line 309, in _augmented_msg
+    msg = yield from coro
+  File "red.py", line 92, in send_message
+    return await super().send_message(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/discord/client.py", line 1152, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "/usr/local/lib/python3.6/site-packages/discord/http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400)

@@ -112,14 +112,17 @@ class StreamRole:
             stream = stream + " " +  stream3
         if stream4 is not None:
             stream = stream + " " +  stream4
-        disName, strName = stream.split(",")
-        disName = disName.replace('-', '').replace('_','')
-        cursour = conn.cursor()
-        sql = "INSERT OR IGNORE INTO streams VALUES (?, ?)"
-        conn.execute(sql, [(disName), (strName)])
-        await self.bot.reply(cf.info("Discord name " + disName + "has been added with stream name " + strName))
-        conn.commit()
-        conn.close()
+        if ('http' in stream) or ('$' in stream) or ('#' in stream) or ('!' in stream):
+            await self.bot.reply(cf.info("Error: Please use format @DiscordName#1234,MixerName"))
+        else:
+            disName, strName = stream.split(",")
+            disName = disName.replace('-', '').replace('_','')
+            cursour = conn.cursor()
+            sql = "INSERT OR IGNORE INTO streams VALUES (?, ?)"
+            conn.execute(sql, [(disName), (strName)])
+            await self.bot.reply(cf.info("Discord name " + disName + "has been added with stream name " + strName))
+            conn.commit()
+            conn.close()
 
 
     @_streamroleset.command(pass_context=True, no_pm=True, name="remove")
